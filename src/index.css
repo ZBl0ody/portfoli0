@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active {
+  color: #eb0074;
+}
+
+/* styles.css */
+/* styles.css */
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.floating-element {
+  animation: floatAnimation 3s ease-in-out infinite; /* Adjust animation duration as needed */
+}
+
+/* styles.css */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(
+    45deg,
+    #eb0074,
+    #fcb9e0,
+    #eb0074
+  ); /* Adjust gradient colors */
+  background-size: 200% 200%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradientAnimation 4s ease infinite; /* Adjust animation duration as needed */
+}
