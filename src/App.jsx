@@ -7,7 +7,7 @@ import Hire from "./pages/Hire";
 
 const App = () => {
   return (
-    <div className="bg-gray text-neutral-300  overflow-hidden">
+    <div className="bg-[#2e225b] text-neutral-300  overflow-hidden">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AppLayout />}>
