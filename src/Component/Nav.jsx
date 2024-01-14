@@ -3,25 +3,30 @@ import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav className="flex justify-between items-center mt-3  ">
-      <h1 className="text-4xl font-bold gradient-text ">
-        {/* <div className="floating-element bg-gradient-to-br from-main to-second w-96 h-96 rounded-full opacity-50 absolute -top-44 -left-20"></div> */}
-        <Link to="/" className="z-30">
-          AS
-        </Link>
+    <header className="flex justify-between items-center mt-7  ">
+      <h1 className="text-red-500 text-4xl font-poppins font-['Brumery Demo'] ">
+        <Link to="/">Najar</Link>
       </h1>
-      <ul className="flex gap-5">
-        <li>
-          <NavLink to="about">About Me</NavLink>
-        </li>
-        <li>
-          <NavLink to="portfolio">Portfolio</NavLink>
-        </li>
-        <li>
-          <NavLink to="hire">Hire Me</NavLink>
-        </li>
-      </ul>
-    </nav>
+      <nav>
+        <div className="w-[31px] cursor-pointer h-5 flex-col justify-start items-end gap-1.5 inline-flex">
+          <div className="w-11 h-[0px] border border-white"></div>
+          <div className="w-9 h-[0px] border border-white"></div>
+          <div className="w-7 h-[0px] border border-white"></div>
+        </div>
+
+        {/* <ul classNameName="flex gap-5">
+          <li>
+            <NavLink to="about">About Me</NavLink>
+          </li>
+          <li>
+            <NavLink to="portfolio">Portfolio</NavLink>
+          </li>
+          <li>
+            <NavLink to="hire">Hire Me</NavLink>
+          </li>
+        </ul> */}
+      </nav>
+    </header>
   );
 };
 

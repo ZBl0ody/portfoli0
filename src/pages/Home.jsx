@@ -1,74 +1,66 @@
 import React from "react";
-import Btn from "../Component/Btn";
-import Ball from "../Component/Ball";
-import Services from "./Services";
-import { motion } from "framer-motion";
-import ParallaxSection from "../Component/ParallaxSection";
+import { BsDownload } from "react-icons/bs";
 
 const Home = () => {
   return (
-    <>
-      <div className="flex items-center flex-1 min-h-screen flex-col md:flex-row  ">
-        <div
-          className="flex flex-col flex-1 z-40 items-center 
-             sm:items-start text-center sm:text-left"
+    <div className="flex lg:flex-row flex-col items-center mx-5  mt-20">
+      <div className="flex-1 text-center  lg:text-left mb-5 ">
+        <h2 className="font-bold text-3xl mb-4">
+          Hi,
+          <br />
+          I’m Ahmed <span className="text-red-500"> Alnajar</span>
+        </h2>
+        <div className="leading-none text-base lg:text-lg tracking-widest mb-5">
+          User Interface Designer <br />
+          <span className="-ml-5">&</span>
+          <br /> Front end Developer
+        </div>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/ahmed-samir-abdon-b99156280"
         >
-          <motion.h1
-            className="uppercase text-4xl font-bold text-main	"
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3 }}
-          >
-            Ahmed Samir
-          </motion.h1>
-          <motion.h1
-            className="uppercase text-3xl font-extralight leading-10	"
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3 }}
-          >
-            i am a professional
-            <br />
-            <motion.span
-              className=" font-semibold"
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4 }}
-            >
-              Front end web developer
-            </motion.span>
-          </motion.h1>
-          {/* <motion.p
-            className="text-xs leading-5 my-6 w-96 "
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4 }}
-          >
-            As a skilled front-end developer with expertise in React, Next.js,
-            and Three.js, I am passionate about creating engaging and dynamic
-            user experiences. With a keen eye for detail, I excel at crafting
-            visually stunning interfaces that captivate users and drive
-            engagement.
-          </motion.p> */}
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4 }}
-          >
-            <Btn to="hire" type="primary">
-              Hire Me
-            </Btn>
-          </motion.div>
-        </div>
-        <div className="flex-1 flex justify-center h-screen w-full ">
-          <Ball />
-          {/* <div className="floating-element bg-gradient-to-br from-main to-second w-96 h-96 rounded-full opacity-50"></div> */}
-        </div>
+          <div className="flex items-center p-2 max-w-[200px] mx-auto lg:mx-0  bg-red-500 rounded-md justify-between">
+            <div className=" text-stone-100 text-lg  ">Hire Me</div>
+            <div className="bg-red-300 bg-opacity-50 rounded text-center py-1 px-2">
+              &rarr;
+            </div>
+          </div>
+        </a>
       </div>
-      <ParallaxSection />
 
-      <Services />
-    </>
+      <div className="w-fit flex flex-col flex-1 items-start md:my-10 ">
+        <img className="w-[250px] lg:w-[350px] " src="/main.png" alt="avatar" />
+        <p className="tracking-widest ">Eng.ahmedsameer0@gmail.com</p>
+      </div>
+
+      <div className="max-w-[300px] mt-10 md:mt-0 lg:ml-16 flex-1 text-center lg:text-left  md:items-start md:justify-center  ">
+        <div className="text-red-500 text-xl font-normal font-['Poppins'] tracking-wide">
+          Expert on
+        </div>
+        <div className="text-white text-xl lg:text-3xl font-normal font-['Poppins'] tracking-wider">
+          Based in Egypt
+          <br />
+          i’m Developer and <br />
+          ui/ux Designer.
+        </div>
+        <div className="text-stone-500 lg:text-xl lg:text-start text-sm font-normal font-['Poppins'] tracking-wide my-5">
+          hey are you looking for designer to build your brand and grow your
+          business? let’s shack hands with me.
+        </div>
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/1gcdFVV6caojo4t7_zz6FtHRbIKwn48Lk/view?usp=sharing"
+        >
+          <div className=" flex flex-col items-center lg:items-start cursor-pointer ">
+            <div className=" text-red-500 text-xl font-normal font-['Poppins'] flex gap-2 items-center">
+              Download CV
+              <BsDownload />
+            </div>
+            <span className="w-[165px] h-[0px] left-0 top-[36px]  border-2 border-red-500" />
+          </div>
+        </a>
+      </div>
+    </div>
   );
 };
 
